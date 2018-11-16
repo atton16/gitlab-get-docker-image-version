@@ -1,0 +1,19 @@
+{
+  "name": "gitlab-get-docker-image-version",
+  "version": "1.0.0",
+  "description": "Get version tag of docker image from provided commit tag",
+  "main": "index.js",
+  "bin": {
+    "gitlab-get-docker-image-version": "./cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Attawit Kittikrairit",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
