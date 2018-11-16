@@ -1,6 +1,6 @@
 {
   "name": "gitlab-get-docker-image-version",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get version tag of docker image from provided commit tag",
   "main": "index.js",
   "bin": {
@@ -15,7 +15,15 @@
     "type": "git",
     "url": "https://github.com/atton16/gitlab-get-docker-image-version.git"
   },
-  "keywords": ["GitLab", "GitLab CI", "CI/CD", "CI", "CD", "docker", "semver"],
+  "keywords": [
+    "GitLab",
+    "GitLab CI",
+    "CI/CD",
+    "CI",
+    "CD",
+    "docker",
+    "semver"
+  ],
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.11",
