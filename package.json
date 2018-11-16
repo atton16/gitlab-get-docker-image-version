@@ -1,6 +1,6 @@
 {
   "name": "gitlab-get-docker-image-version",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Get version tag of docker image from provided commit tag",
   "main": "index.js",
   "bin": {
