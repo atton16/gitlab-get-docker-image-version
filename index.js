@@ -70,7 +70,7 @@ const searchTag = (repoInfo) => {
   const srcIdx = _.findIndex(repoInfo, (item) => item.name === SEARCH_TAG);
   const revision = repoInfo[srcIdx].revision;
   const tgtIdx = _.findIndex(repoInfo, (item) => {
-    return item.revision === revision && item.name.match(/^[0-9]+.[0-9]+.[0-9]+/)
+    return item.revision === revision && item.name.match(/^([0-9]+.[0-9]+.[0-9]+)$/)
   });
   return repoInfo[tgtIdx].name;
 };
