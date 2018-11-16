@@ -9,8 +9,14 @@ const SEARCH_TAG = process.argv[2] || process.env.CI_COMMIT_SHA; // SHA Commit T
 
 if (!SEARCH_TAG) {
   console.log('Usage#1: ');
+  console.log('$ export RUNNER_TOKEN=<Personal Access Token>');
+  console.log('$ export REPO_HOST=<Repo URL>');
+  console.log('$ export CI_PROJECT_URL=<Project URL>');
   console.log('$ gitlab-get-docker-image-version <SHA Commit Tag>');
   console.log('Usage#2: ');
+  console.log('$ export RUNNER_TOKEN=<Personal Access Token>');
+  console.log('$ export REPO_HOST=<Repo URL>');
+  console.log('$ export CI_PROJECT_URL=<Project URL>');
   console.log('$ export CI_COMMIT_SHA=<SHA Commit Tag>');
   console.log('$ gitlab-get-docker-image-version');
   process.exit(1);

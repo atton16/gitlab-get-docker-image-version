@@ -5,19 +5,19 @@ Get version tag of docker image from provided commit tag. It is designed to be u
 ## Usage
 
 ```bash
-export RUNNER_TOKEN=<Personal Access Token>
-export REPO_HOST=<Repo URL>
-export CI_PROJECT_URL=<Project URL>
+$ export RUNNER_TOKEN=<Personal Access Token>
+$ export REPO_HOST=<Repo URL>
+$ export CI_PROJECT_URL=<Project URL>
 $ gitlab-get-docker-image-version <SHA Commit Tag>
 ```
 
 or
 
 ```bash
-export RUNNER_TOKEN=<Personal Access Token>
-export REPO_HOST=<Repo URL>
-export CI_PROJECT_URL=<Project URL>
-export CI_COMMIT_SHA=<SHA Commit Tag>
+$ export RUNNER_TOKEN=<Personal Access Token>
+$ export REPO_HOST=<Repo URL>
+$ export CI_PROJECT_URL=<Project URL>
+$ export CI_COMMIT_SHA=<SHA Commit Tag>
 $ gitlab-get-docker-image-version
 ```
 
@@ -47,10 +47,10 @@ Assumptions
    | latest            | bbbbbb |
 
 ```bash
-export RUNNER_TOKEN=1234
-export REPO_HOST=https://git.example.com
-export CI_PROJECT_URL=https://git.example.com/my-group/my-project
-export CI_COMMIT_SHA=some-sha-commit-a
+$ export RUNNER_TOKEN=1234
+$ export REPO_HOST=https://git.example.com
+$ export CI_PROJECT_URL=https://git.example.com/my-group/my-project
+$ export CI_COMMIT_SHA=some-sha-commit-a
 $ gitlab-get-docker-image-version
 1.0.0
 $ gitlab-get-docker-image-version some-sha-commit-b
